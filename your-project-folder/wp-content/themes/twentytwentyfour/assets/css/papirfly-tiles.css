@@ -1,0 +1,33 @@
+.pfl.is-layout-grid {
+   grid-auto-rows: minmax(280px, auto);
+   gap:30px;
+   max-width: 1200px;
+
+   & .wp-block-image {
+      height: 78%;
+
+      & img {
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   & .wp-element-caption {
+      padding: 20px;
+      margin: 0;
+   }
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+   .pfl.is-layout-grid {
+      grid-auto-rows: 280px;
+      gap:30px;
+      max-width: 1200px;
+   
+   
+   }
+
+}
